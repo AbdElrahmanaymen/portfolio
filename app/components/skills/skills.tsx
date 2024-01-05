@@ -6,7 +6,7 @@ const Skills = () => {
       <div className="prose">
         <h1>Skills.</h1>
       </div>
-      <div className="flex lg:flex-row py-10">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-10">
         <div className="grid flex-grow">
           <div className="prose">
             <h2>Programming</h2>

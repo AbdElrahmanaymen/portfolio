@@ -5,7 +5,7 @@ import { projects } from "@/app/data/projects";
 
 const Projects = () => {
   return (
-    <div className="px-14">
+    <div className="min-h-screen w-full px-14 py-20">
       <div className="prose">
         <h1>Featured Projects.</h1>
       </div>

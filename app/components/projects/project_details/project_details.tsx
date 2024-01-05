@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import AppStoreButton from "../../buttons/app_store_btn";
 import PlayStoreButton from "../../buttons/play_store_btn";
-import { ProjectDetailsProps } from "../../../types/types"
+import { ProjectDetailsProps } from "../../../types/types";
 
 const ProjectDetailsComponent: React.FC<ProjectDetailsProps> = ({
   appName,
@@ -12,10 +12,14 @@ const ProjectDetailsComponent: React.FC<ProjectDetailsProps> = ({
   appStoreLink,
   playStoreLink,
   previewVideo,
-  isReverseOrder
+  isReverseOrder,
 }) => {
   return (
-    <div className={`flex flex-col w-full h-screen lg:flex-row py-20 ${isReverseOrder ? 'lg:flex-row-reverse' : ''}`}>
+    <div
+      className={`h-full flex flex-col lg:flex-row py-20 gap-10 md:flex-col ${
+        isReverseOrder ? "lg:flex-row-reverse" : ""
+      }`}
+    >
       <div className="grid flex-grow place-items-center">
         <Image
           alt=""
@@ -23,7 +27,7 @@ const ProjectDetailsComponent: React.FC<ProjectDetailsProps> = ({
           height={0}
           sizes="100vw"
           src={appPhoto}
-          className="object-contain w-1/2"
+          className="object-contain w-auto h-auto"
         />
       </div>
       <div className="grid flex-grow place-items-center">
@@ -35,10 +39,23 @@ const ProjectDetailsComponent: React.FC<ProjectDetailsProps> = ({
             </div>
           ))}
           <p>{appDescription}</p>
-          <div className="flex gap-5 items-center">
-            {appStoreLink.length > 0 ? <AppStoreButton link={appStoreLink} /> : null} 
-            {playStoreLink.length > 0 ? <PlayStoreButton link={playStoreLink} /> : null}
-            {previewVideo.length > 0 ? <button className="btn btn-outline">Watch Video</button> : null}       
+          <div className="flex  gap-5 items-center place-items-center">
+            {appStoreLink.length > 0 ? (
+              <AppStoreButton link={appStoreLink} />
+            ) : null}
+            {playStoreLink.length > 0 ? (
+              <PlayStoreButton link={playStoreLink} />
+            ) : null}
+            {previewVideo.length > 0 ? (
+              <button
+                className="btn btn-outline"
+                onClick={() => {
+                  window.open(previewVideo, "_blank");
+                }}
+              >
+                Watch Video
+              </button>
+            ) : null}
           </div>
         </article>
       </div>

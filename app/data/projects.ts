@@ -9,7 +9,7 @@ export const projects: ProjectDetailsProps[] = [
     appTags: ["Flutter", "MySQL", "Javascript", "Express.Js", "Mobile App"],
     appStoreLink: "https://apps.apple.com/us/app/rentop/id1661948480",
     playStoreLink: "https://play.google.com/store/apps/details?id=kwayes.rentop.rentop",
-    previewVideo: "",
+    previewVideo: "https://youtu.be/-B08VuNf25c",
     isReverseOrder: false,
   },
   {
@@ -58,17 +58,17 @@ export const projects: ProjectDetailsProps[] = [
   //   previewVideo: "",
   //   isReverseOrder: false,
   // },
-  // {
-  //   appName: "Nazrah App v2",
-  //   appPhoto: "/nazrah/nazrah_v2.png",
-  //   appDescription:
-  //     "Nazrah App is an online marketplace in Saudi Arabia, serving as a platform for individuals to buy and sell a wide range of products. The app caters to a diverse array of categories, including electronics, fashion, furniture, and more.",
-  //   appTags: ["Flutter", "Firebase", "Mobile App"],
-  //   appStoreLink: "",
-  //   playStoreLink: "",
-  //   previewVideo: "",
-  //   isReverseOrder: true,
-  // },
+  {
+    appName: "Nazrah App",
+    appPhoto: "/nazrah/nazrah.png",
+    appDescription:
+      "Nazrah App is an online marketplace in Saudi Arabia, serving as a platform for individuals to buy and sell a wide range of products. The app caters to a diverse array of categories, including electronics, fashion, furniture, and more.",
+    appTags: ["Flutter", "Firebase", "Mobile App"],
+    appStoreLink: "",
+    playStoreLink: "",
+    previewVideo: "https://youtu.be/8FXRh_4fEEc",
+    isReverseOrder: false,
+  },
   {
     appName: "Nazrah Website",
     appPhoto: "/nazrah/nazrah_web.png",
@@ -77,7 +77,7 @@ export const projects: ProjectDetailsProps[] = [
     appTags: ["Flutter", "Firebase", "Website"],
     appStoreLink: "",
     playStoreLink: "",
-    previewVideo: "",
+    previewVideo: "https://youtu.be/RwPJjpHlXUw",
     isReverseOrder: true,
   },
   // {

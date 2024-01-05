@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="h-screen flex flex-col justify-center px-14">
+    <div className="min-h-screen flex flex-col justify-center px-14">
       <div className="prose">
         <h1>About me.</h1>
       </div>
-      <div className="flex lg:flex-row py-10">
+      <div className="flex flex-col w-full lg:flex-row md:flex-col py-10">
         <div className="grid flex-grow place-items-center">
           <Image
             alt=""
@@ -15,7 +15,7 @@ const About = () => {
             height={0}
             sizes="100vw"
             src="/me-2.png"
-            className="object-cover w-full "
+            className="object-contain w-full"
           />
         </div>
         <div className="grid flex-grow place-items-center">

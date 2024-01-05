@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
 const Welcome = () => {
   return (
-    <div className="flex flex-col w-full h-screen lg:flex-row justify-center">
+    <div className="flex flex-col-reverse w-full h-screen justify-center lg:flex-row sm:flex-col-reverse md:flex-col-reverse xl:flex-row px-14">
       <div className="grid flex-grow place-items-center">
         <article className="prose lg:prose-xl dark:prose-invert">
           <h3>Hey, I’m Abdelrahman 👋</h3>
@@ -13,8 +15,26 @@ const Welcome = () => {
             passion drives impactful solutions.
           </p>
           <div className="flex items-center">
-            <button className="btn btn-outline">Get in Touch</button>
-            <button className="btn ml-5">
+            <button
+              className="btn btn-outline"
+              onClick={() => {
+                window.open(
+                  "mailto:abdelrahmanaymen@outlook.com",
+                  "_blank"
+                );
+              }}
+            >
+              Get in Touch
+            </button>
+            <button
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/file/d/10fMsUvlkUpNEfHM2n2sAbWeo8SHX7zws/view?usp=sharing",
+                  "_blank"
+                );
+              }}
+              className="btn ml-5"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
