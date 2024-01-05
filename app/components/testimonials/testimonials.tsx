@@ -27,7 +27,7 @@ const Testimonials = () => {
                 />
               </svg>
               <blockquote>
-                <p className="text-2xl font-medium text-gray-900 dark:text-white">
+                <p className="text-2xl font-medium text-white">
                   &#34;I have been working with Abdelrahman in a robotics
                   competition, and he was an active team member, who was eager
                   to learn and practice.&#34;
@@ -40,7 +40,7 @@ const Testimonials = () => {
                   alt="profile picture"
                 />
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                  <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                  <div className="pr-3 font-medium text-white">
                     Noha Magdy
                   </div>
                   <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
