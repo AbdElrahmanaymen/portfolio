@@ -2,14 +2,14 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="h-screen flex flex-col justify-center px-14">
+    <div className="min-h-screen flex flex-col justify-center px-14">
       <div className="prose">
         <h1>Skills.</h1>
       </div>
       <div className="grid grid-cols-2 xl:grid-cols-4 gap-10 py-10">
-        <div className="grid flex-grow">
+        <div className="grid flex-grow ">
           <div className="prose">
-            <h2>Programming</h2>
+            <h2>Languages</h2>
             <h4>C</h4>
             <h4>C++</h4>
             <h4>Python</h4>
