@@ -33,9 +33,11 @@ const ProjectDetailsComponent: React.FC<ProjectDetailsProps> = ({
       <div className="grid grid-flow place-items-center">
         <article className="prose">
           <h1>{appName}</h1>
-          <div className="flex flex-col gap-4 lg:flex-row">
+          <div 
+          className="flex flex-wrap"
+          >
             {appTags.map((value, index) => (
-                <div key={index} className="badge badge-primary">{value}</div>
+                <div key={index} className="badge badge-primary mr-2">{value}</div>
             ))}
           </div>
           <p>{appDescription}</p>

@@ -5,7 +5,7 @@ const PlayStoreButton: React.FC<AppProps> = ({link}) => {
   return (
     <button
       type="button"
-      className="flex items-center justify-center w-full  text-white bg-black rounded-lg h-14"
+      className="flex items-center justify-center w-full text-white bg-black rounded-lg h-14"
       onClick={() => {
         window.open(link, "_blank");
       }}
