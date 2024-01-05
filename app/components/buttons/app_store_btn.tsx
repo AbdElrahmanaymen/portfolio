@@ -5,7 +5,7 @@ const AppStoreButton: React.FC<AppProps> = ({ link }) => {
   return (
     <button
       type="button"
-      className="flex items-center justify-center w-48 text-white bg-black h-14 rounded-xl"
+      className="flex items-center justify-center w-full text-white bg-black h-14 rounded-xl"
       onClick={() => {
         window.open(link, "_blank");
       }}
