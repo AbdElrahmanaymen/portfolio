@@ -30,16 +30,19 @@ const ProjectDetailsComponent: React.FC<ProjectDetailsProps> = ({
           className="object-contain w-auto h-auto"
         />
       </div>
-      <div className="grid flex-grow place-items-center">
+      <div className="grid grid-flow place-items-center">
         <article className="prose">
           <h1>{appName}</h1>
-          {appTags.map((value, index) => (
-            <div className="badge badge-primary mr-1" key={index}>
-              {value}
-            </div>
-          ))}
+          <div className="flex flex-col gap-4 lg:flex-row">
+            {appTags.map((value, index) => (
+                <div key={index} className="badge badge-primary">{value}</div>
+            ))}
+          </div>
           <p>{appDescription}</p>
-          <div className="flex  gap-5 items-center place-items-center">
+          <div 
+          className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-5 items-center "
+          // className="flex flex-col lg:flex-row gap-5 items-center place-items-center"
+          >
             {appStoreLink.length > 0 ? (
               <AppStoreButton link={appStoreLink} />
             ) : null}
