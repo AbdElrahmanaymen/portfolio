@@ -34,7 +34,7 @@ const ProjectDetailsComponent: React.FC<ProjectDetailsProps> = ({
         <article className="prose">
           <h1>{appName}</h1>
           <div 
-          className="flex flex-wrap"
+          className="flex flex-wrap gap-4"
           >
             {appTags.map((value, index) => (
                 <div key={index} className="badge badge-primary mr-2">{value}</div>
