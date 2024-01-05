@@ -12,9 +12,10 @@ const ProjectDetailsComponent: React.FC<ProjectDetailsProps> = ({
   appStoreLink,
   playStoreLink,
   previewVideo,
+  isReverseOrder
 }) => {
   return (
-    <div className="flex flex-col w-full h-screen lg:flex-row py-10">
+    <div className={`flex flex-col w-full h-screen lg:flex-row py-20 ${isReverseOrder ? 'lg:flex-row-reverse' : ''}`}>
       <div className="grid flex-grow place-items-center">
         <Image
           alt=""
@@ -22,7 +23,7 @@ const ProjectDetailsComponent: React.FC<ProjectDetailsProps> = ({
           height={0}
           sizes="100vw"
           src={appPhoto}
-          className="object-contain w-fit"
+          className="object-contain w-1/2"
         />
       </div>
       <div className="grid flex-grow place-items-center">

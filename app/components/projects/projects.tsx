@@ -7,9 +7,8 @@ const Projects = () => {
   return (
     <div className="px-14">
       <div className="prose">
-        <h1>Projects.</h1>
+        <h1>Featured Projects.</h1>
       </div>
-
       {projects.map((value, index) => (
         <ProjectDetailsComponent
           key={index}
@@ -20,6 +19,7 @@ const Projects = () => {
           appStoreLink={value.appStoreLink}
           playStoreLink={value.playStoreLink}
           previewVideo={value.previewVideo}
+          isReverseOrder={value.isReverseOrder}
         />
       ))}
     </div>

@@ -6,6 +6,7 @@ export interface ProjectDetailsProps {
   appStoreLink: string;
   playStoreLink: string;
   previewVideo: string;
+  isReverseOrder: boolean;
 }
 
 export interface AppProps {
