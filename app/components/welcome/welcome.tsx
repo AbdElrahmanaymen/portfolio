@@ -54,7 +54,7 @@ const Welcome = () => {
               width={0}
               height={0}
               sizes="(max-width: 768px) 100vw, 33vw"
-              src="/me.png"
+              src="/me.webp"
               className="relative object-top h-1/2 "
             />
           </div>
