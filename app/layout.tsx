@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Abdelrahman Portfolio",
-  description: "Explore my world of robotics and programming innovation, where passion drives impactful solutions.",
+  description:
+    "Explore my world of robotics and programming innovation, where passion drives impactful solutions.",
   icons: {
     icon: [
       {
@@ -19,7 +21,8 @@ export const metadata: Metadata = {
     type: "website",
     url: "http://abdelrahmanaymen.tech",
     title: "Abdelrahman Portfolio",
-    description: "Explore my world of robotics and programming innovation, where passion drives impactful solutions.",
+    description:
+      "Explore my world of robotics and programming innovation, where passion drives impactful solutions.",
     siteName: "Abdelrahman Portfolio",
     images: [
       {
@@ -37,7 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="dark">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
