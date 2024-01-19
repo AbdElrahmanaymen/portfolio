@@ -3,6 +3,17 @@
 import React from "react";
 import Image from "next/image";
 
+const openMailTo = () => {
+  window.open("mailto:abdelrahmanaymen@outlook.com", "_blank");
+};
+
+const openCV = () => {
+  window.open(
+    "https://drive.google.com/file/d/10fMsUvlkUpNEfHM2n2sAbWeo8SHX7zws/view?usp=sharing",
+    "_blank"
+  );
+};
+
 const Welcome = () => {
   return (
     <div className="flex flex-col-reverse w-full h-screen justify-center lg:flex-row sm:flex-col-reverse md:flex-col-reverse xl:flex-row px-14">
@@ -15,26 +26,10 @@ const Welcome = () => {
             passion drives impactful solutions.
           </p>
           <div className="flex items-center">
-            <button
-              className="btn btn-outline"
-              onClick={() => {
-                window.open(
-                  "mailto:abdelrahmanaymen@outlook.com",
-                  "_blank"
-                );
-              }}
-            >
+            <button className="btn btn-outline" onClick={openMailTo}>
               Get in Touch
             </button>
-            <button
-              onClick={() => {
-                window.open(
-                  "https://drive.google.com/file/d/10fMsUvlkUpNEfHM2n2sAbWeo8SHX7zws/view?usp=sharing",
-                  "_blank"
-                );
-              }}
-              className="btn ml-5"
-            >
+            <button className="btn ml-5" onClick={openCV}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -53,14 +48,14 @@ const Welcome = () => {
       </div>
       <div className="grid flex-grow place-items-center">
         <div className="avatar">
-          <div className="h-1/2 rounded-full ring ring-white ring-offset-base-100 ring-offset-2">
+          <div className="rounded-full ring ring-white ring-offset-base-100 ring-offset-2">
             <Image
               alt=""
               width={0}
               height={0}
-              sizes="100vw"
-              src="/me.webp"
-              className="relative object-top w-fit h-fit"
+              sizes="(max-width: 768px) 100vw, 33vw"
+              src="/me.png"
+              className="relative object-top h-1/2 "
             />
           </div>
         </div>

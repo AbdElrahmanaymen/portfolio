@@ -25,7 +25,7 @@ const ProjectDetailsComponent: React.FC<ProjectDetailsProps> = ({
           alt=""
           width={0}
           height={0}
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 50vw"
           src={appPhoto}
           className="object-contain w-auto h-auto"
         />
